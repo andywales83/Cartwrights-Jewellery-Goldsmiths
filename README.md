@@ -1,108 +1,124 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **Cartwright's Jewellery & Goldsmiths**
 
-Welcome Andrew Llewellyn,
+Cartwright's Jewellery & Goldsmiths, is the final Milestone project, specifically built for the Django modules of the Code Institute's - Full Stack Software Development Diploma. The scope and idea for this project, were to plan, design and build an e-commerce website, that gives users all of the same functionality of any other general e-commerce based website. The project is built around an idea for an online Jewellery store, with a view to possibly being used as a full production site for a family member, when the course has been completed.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[View the live project on Heroku]()
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![Am I responsive image]()
 
-## Gitpod Reminders
+---
+## **Contents**
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- [UX Design](#ux-design)
+- [UI Design](#ux-design)
+- [Wireframes](#wireframes)
+- [Data Structure](#data-structure) 
+- [Existing Features](#existing-features)
+- [Future Features](#future-features)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
 
 ---
 
-Happy coding!
+## **UX Design**
+
+### **User Persona**
+
+The website is targeted at users who may be interested in purchasing ready made Jewellery, or accessing bespoke design and production services. The primary focus of the site is to ensure users are faced with a site that is easy to navigate, offers the user the options to browse the site, purchase items, or make contact for bespoke design services.
+
+
+### **User Goals**
+
+- Be able to view all products available on the site
+- Be able to view featured products of deals.
+- Be able to be able to vies the contact details for the store and it's bespoke services.
+- Be able to use the application on Mobile, Tablet or Desktop devices. 
+
+### **Site Owners Goals**
+
+- Provide a positive experience for all users, looking to access the site and make purchases.
+- Ensure that the sites purchasing functionality is as clear and seamless as possible, increasing the number of conversions and reducing cart abandonment.
+- Be a "go-to" store, for users looking to purchase jewellery products.
+- Make it easy for any potential customer to contact or find the store and ask any questions. 
+
+
+### **User Requirements and Expectations**
+#### Requirements 
+
+- Easily identifiable navigation.
+- Clean and structured layout with rlevant links to different product categories.
+- Visually appealing elements
+- Easy way to search, sort and filter products for quick and easy viewing and purcahsing.
+- Be notified of order confirmation via email.
+
+#### Expectations
+
+- When using the main navigational links, the user should be directed to each part of the application without issue.
+- Links clicked on in the user resources, should open in a new page and not overwrite the current page that the user is on.
+- The ability to purchase a product safely and securely, with a clear process and confirmation of the purchase.
+- To be able to register for an account with the store, where I can see previous purchases and re-order if required..
+
+### **User Stories**
+
+#### *New Visitor*
+1. As a first time visitor, I want the main purpose of the site to be immediately clear.
+2. As a first time visitor, I want the look of the site to be visually appealing.
+3. As a first time visitor, I want the layout of the site to be well structured.
+4. As a first time visitor, I want to be able to easily navigate the site and see the different product categories that are available.
+5. As a frist time visitor, I want to be able to easily find the main products page.
+7. As a first time visitor, I want to be able to navigate directly to pages for spcific product categories.
+8. As a first time visitor, I want to be able to sort of filter product categories, to more relevant product views.
+9. As a first time visitor, I want to be able to conduct a more specific search for a product, via an easilly accessible search function.
+10. As a first time visitor, I want to be able to closely view product details in their own page.
+11. As a first time visitor, I want to be able to have full control over the ammounts of a product that can be purchased.
+12. As a first time visitor, I want to be able to add the chosen products to a shopping basket where the basket total can be seen.
+13. As a first time visitor, I want to be able to access the shopping basket at any time and update or remove the chosen products, seeing an update to the overall shopping basket total.
+14. As a first time visitor, I want to be able to preview the order details befor continuing to make a purchase.
+14. As a first time visitor, I want to be able to follow a simple payment process which feels secure.
+14. As a first time visitor, I want to be able to see notifications appear, instructing of confirmed or failed purchases, with feedback on the reasons for failed purchases.
+14. As a first time visitor, I want to be able to register as a user either before purchasing products or after purchasing products. 
+14. As a first time visitor, I want to be able to find contact details for the site owners, and possibly submit an online enquiry regarding bespoke jewellery design. 
+14. As a first time visitor, I want to be able to connect with the store on social media platforms where I can see additional information.
+
+#### *Registered User*
+
+As a regitered user, I would want all of the same functionality of that of a guest user, as well as:
+
+1. As a registered user, I want to be able to login with a set of registered credentials.
+2. As a registered user, I want to be able to logout of my account.
+3. As a registered user, I want to be able to change my user credentials should they be forgotten.
+4. As a registered user, I want to be able to add and store my personal details for future use on the site.
+5. As a registered user, I want to be able to edit or delete my personal details, should circumstances require it.
+6. As a registered user, I want to be able to see a profile page where I can view my previous orders.
+8. As a registered user, I want to be able to delete my account in full, if I no longer wish to remain a member.
+
+#### *Site Administrator*
+
+As a site administrator, I would want all of the same functionality of that of a guest/registered user, as well as:
+
+1. As a site Administrator, I would want to be able to control the main functionality of the site, including adding new categories and products.
+2. As a site Administrator, I would want to be able to edit or delete categories and products as required.
+3. As a site Administrator, I would want to be able to control the products and their status in deals and promotions.
+4. As a site Administrator, I would want to be able to view all current and existing purchases made by users for accessing should a purchase query arise.
+5. As a site Administrator, I would want to be able to add new users or delete users who have issues with registration or account deletion functionality.
+
+---
+
+## **UI Design**
+
+### Fonts
+
+
+### Colour Scheme
+
+
+#### **Colour Palette**
+
+
+
+### Icons
+
+
+---
