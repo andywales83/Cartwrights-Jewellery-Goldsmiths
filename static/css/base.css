@@ -1,0 +1,105 @@
+/* ---------- Root Variables ---------- */
+
+:root {
+    /* CSS HEX */
+    --blue-munsell: #068caf;
+    --cerulean-crayola: #08a9d3;
+    --cerulean-crayola-gradient: #0884a3;
+    --vivid-sky-blue: #0acdff;
+    --opal: #bfd2cf;
+    --gainsboro: #dedee0;
+    --silver: #c5c3c6;
+    --davys-grey: #535354;
+    --eerie-black: #232426;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url() no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: var(--eerie-black);
+    font-family: 'Lato', sans-serif;
+}
+
+#topnav {
+    background-color: var(--vivid-sky-blue);
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    background: var(--cerulean-crayola);
+    color: white;
+    min-width: 260px;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.control-btn {
+    background: var(--cerulean-crayola);
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: var(--cerulean-crayola-gradient);
+    color: white;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--eerie-black);
+}
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
