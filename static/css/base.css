@@ -18,11 +18,22 @@ html {
 }
 
 body {
-    background: url() no-repeat center center fixed;
+    background: url(/static/images/home-img.png) no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: var(--eerie-black);
-    font-family: 'Lato', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Home page image overlay to dim down brightness */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
 }
 
 #topnav {
@@ -39,11 +50,26 @@ body {
 }
 
 .nav-link {
+    font-family: 'Playfair Display';
     text-transform: uppercase;
+}
+
+.nav-link:visited {
+    text-decoration: none;
+}
+
+.navbar-logo {
+    font-size: 2.2rem;
+    font-weight: 700;
 }
 
 .main-logo-link {
     width: fit-content;
+}
+
+.main-page-logo {
+    font-size: 3.8rem;
+    font-weight: 500;
 }
 
 .shop-now-button {
