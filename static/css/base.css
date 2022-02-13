@@ -25,7 +25,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* Home page image overlay to dim down brightness */
+/* --- Home page image overlay to dim down brightness --- */
 .overlay {
     background-color: rgba(0, 0, 0, 0.1);
     top: 0;
@@ -49,50 +49,82 @@ body {
     width: 1.5rem;
 }
 
+/* ------------------------------ Navigation Styling */
+
+/* --- Navigation --- */
 .nav-link {
-    font-family: 'Playfair Display';
     text-transform: uppercase;
-}
-
-.nav-link:visited {
-    text-decoration: none;
-}
-
-.navbar-logo {
-    font-size: 2.2rem;
-    font-weight: 700;
+    color: var(--eerie-black) !important;
+    font-family: 'Playfair Display', sans-serif;
 }
 
 .main-logo-link {
     width: fit-content;
 }
 
+.navbar-logo {  
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.nav-options {
+    background-color: var(--vivid-sky-blue);
+}
+
+/* --- Search Box Styling --- */
+.form-control {
+    border-radius: 25px;
+}
+
+.control-btn {
+    background: var(--vivid-sky-blue);
+}
+
+.control-btn:hover {
+    background: var(--cerulean-crayola-gradient);
+}
+
+/* --- Nav Dropdown Styling --- */
+
+li a {
+    color: #232426;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.dropdown-item {
+    font-weight: bold;
+}
+
+.dropdown-item:hover {
+    background-color: #0acdff;
+}
+
+/* --- Delivery Banner --- */
+.bg-black {
+    background-color: #232426;
+    text-transform: uppercase;
+}
+
+.banner-font {
+    font-size: 1.25rem;
+}
+
+/* -------------------- Main Page CSS */
 .main-page-logo {
     font-size: 3.8rem;
     font-weight: 500;
 }
 
 .shop-now-button {
-    background: var(--cerulean-crayola);
+    background: var(--vivid-sky-blue);
     color: white;
     min-width: 260px;
+    z-index: 100;
+    position: relative;
 }
 
-.btn-black {
-    background: black;
-    color: white;
-}
-
-.control-btn {
-    background: var(--cerulean-crayola);
-}
-
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.shop-now-button:hover {
     background: var(--cerulean-crayola-gradient);
     color: white;
 }
