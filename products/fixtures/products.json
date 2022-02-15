@@ -1,0 +1,28 @@
+[{
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "cjg2022001",
+            "name": "9ct Yellow Gold Micro Belcher 2mm Gauge Pendant Chain",
+            "description": "Solid 9ct yellow gold traditional English micro belcher pendant chain necklace in 16in fitted with a lobster trigger clasp.",
+            "price": 49.99,
+            "category": 1,
+            "rating": 3.6,
+            "image": "cjg2022001.jpeg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "cjg2022002",
+            "name": "9ct Yellow Gold Round Belcher 4.8mm Gauge Chain",
+            "description": "Solid 9ct yellow gold traditional English round belcher pendant chain necklace in 18in fitted with a trigger clasp.",
+            "price": 99.99,
+            "category": 1,
+            "rating": 4.2,
+            "image": "cjg2022002.jpeg"
+        }
+    }
+
+]
