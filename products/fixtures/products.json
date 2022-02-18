@@ -2,27 +2,39 @@
         "pk": 1,
         "model": "products.product",
         "fields": {
-            "sku": "cjg2022001",
+            "sku": "cjg2022001c",
             "name": "9ct Yellow Gold Micro Belcher 2mm Gauge Pendant Chain",
             "description": "Solid 9ct yellow gold traditional English micro belcher pendant chain necklace in 16in fitted with a lobster trigger clasp.",
             "price": 49.99,
-            "category": 1,
+            "category": 2,
             "rating": 3.6,
-            "image": "cjg2022001.jpeg"
+            "image": "cjg2022001c.jpeg"
         }
     },
     {
         "pk": 2,
         "model": "products.product",
         "fields": {
-            "sku": "cjg2022002",
+            "sku": "cjg2022002c",
             "name": "9ct Yellow Gold Round Belcher 4.8mm Gauge Chain",
             "description": "Solid 9ct yellow gold traditional English round belcher pendant chain necklace in 18in fitted with a trigger clasp.",
             "price": 99.99,
-            "category": 1,
+            "category": 2,
             "rating": 4.2,
-            "image": "cjg2022002.jpeg"
+            "image": "cjg2022002c.jpeg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "cjg2022002r",
+            "name": "9ct Yellow Gold Cubic Zirconia Ring",
+            "description": "Ssolid 9ct yellow gold hand finished 3-stone ring hand-set with cubic zirconia stones.",
+            "price": 199.99,
+            "category": 1,
+            "rating": 4.8,
+            "image": "cjg2022002r.jpeg"
         }
     }
-
 ]
