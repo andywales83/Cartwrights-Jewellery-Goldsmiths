@@ -132,6 +132,7 @@ a:visited {
 
 #about-section {
     background-color: white;
+    padding-bottom: 50px;
 }
 
 .about-header {
@@ -140,6 +141,33 @@ a:visited {
 
 .about-title {
     font-size: 3rem;
+}
+
+/* .home-img {
+    height: 600px !important;
+    width: 600px !important;
+} */
+
+/* ------------------------------ Products Page Styling */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: var(--gainsboro);
+    z-index: -1;
+}
+
+/* .shadow {
+    box-shadow: 0 .25rem .25rem var(--vivid-sky-blue) !important;
+} */
+
+
+/* ------------------------------ Footer Styling */
+footer {
+    background-color: var(--vivid-sky-blue) !important;
 }
 
 /* -------------------------------- Media Queries */
@@ -164,9 +192,4 @@ a:visited {
     .header-container {
         padding-top: 164px;
     }
-}
-
-/* ------------------------------ Footer Styling */
-footer {
-    background-color: var(--vivid-sky-blue) !important;
 }
