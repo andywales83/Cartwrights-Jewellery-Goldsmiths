@@ -7,12 +7,14 @@
                 All Products
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Rings</a></li>
-                <li><a class="dropdown-item" href="#">Chains</a></li>
-                <li><a class="dropdown-item" href="#">Earings</a></li>
-                <li><a class="dropdown-item" href="#">Bracelets</a></li>
-                <li><a class="dropdown-item" href="#">Watches</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}">All Products</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=rings">Rings</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=chains">Chains</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=earings">Earings</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=bracelets">Bracelets</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=watches">Watches</a></li>
+                <li><a class="dropdown-item"
+                        href="{% url 'products' %}?category=rings,chains,earings,bracelets,watches">All Products</a>
+                </li>
             </ul>
         </li>
 
@@ -22,9 +24,11 @@
                 Collections
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Bee Collection</a></li>
-                <li><a class="dropdown-item" href="#">Sheep Collection</a></li>
-                <li><a class="dropdown-item" href="#">Elegence Collection</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=bee_collection">Bee Collection</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=sheep_collection">Sheep Collection</a>
+                </li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=elegance_collection">Elegence
+                        Collection</a></li>
             </ul>
         </li>
 
@@ -34,9 +38,10 @@
                 Special Offers
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">New Arrivals</a></li>
-                <li><a class="dropdown-item" href="#">Deals</a></li>
-                <li><a class="dropdown-item" href="#">All Specials</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=new_arrivals">New Arrivals</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=deals">Deals</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=new_arrivals,deals">All Specials</a>
+                </li>
             </ul>
         </li>
 
