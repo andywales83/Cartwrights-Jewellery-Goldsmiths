@@ -25,6 +25,20 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+    color: black;
+    display: none;
+    text-decoration: none;
+}
+
+.btt-link {
+    cursor: pointer;
+}
 
 /* from Bulma */
 .icon {
