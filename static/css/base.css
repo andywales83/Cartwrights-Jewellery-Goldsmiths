@@ -14,7 +14,7 @@
 }
 
 html {
-    height: 100%;
+    height: 100vh;
 }
 
 body {
@@ -192,6 +192,9 @@ a.category-badge>span.badge:hover {
 /* ------------------------------ Footer Styling */
 footer {
     background-color: var(--vivid-sky-blue) !important;
+    margin-bottom: 0 !important;
+    position: absolute;
+    width: 100%;
 }
 
 button .subscribe-btn {

@@ -112,7 +112,7 @@
                                     {% if grand_total %}
                                     ${{ grand_total|floatformat:2 }}
                                     {% else %}
-                                    $0.00
+                                    £0.00
                                     {% endif %}
                                 </p>
                             </div>
@@ -133,7 +133,7 @@
         </div>
         <div class="row text-center" id="delivery-banner">
             <div class="col bg-black text-white">
-                <h4 class="my-1 banner-font">Get free delivery on all orders over ${{ free_shipping_threshold }}</h4>
+                <h4 class="my-1 banner-font">Get free delivery on all orders over £{{ free_delivery_threshold }}</h4>
             </div>
         </div>
     </header>
