@@ -32,12 +32,26 @@ body {
     bottom: 100px;
     right: 10px;
     color: black;
-    display: none;
     text-decoration: none;
+    z-index: 999;
 }
 
 .btt-link {
     cursor: pointer;
+}
+
+.btn-outline-black {
+    background: var(--vivid-sky-blue);
+    color: black !important;
+    /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-outline-black:hover {
+    background: var(--blue-munsell);
+    color: black !important;
+    /* use important to override link colors for <a> elements */
+    border: 1px solid black;
 }
 
 /* from Bulma */
@@ -193,7 +207,6 @@ a.category-badge>span.badge:hover {
 footer {
     background-color: var(--vivid-sky-blue) !important;
     margin-bottom: 0 !important;
-    position: absolute;
     width: 100%;
 }
 
