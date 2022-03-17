@@ -1,4 +1,6 @@
-""" url path for the home App """
+"""
+Urls for basket including to add, adjust and remove items
+"""
 
 from django.urls import path
 from . import views
