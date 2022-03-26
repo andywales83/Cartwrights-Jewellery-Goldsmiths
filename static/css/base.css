@@ -37,6 +37,10 @@ body {
     z-index: 999;
 }
 
+.text-black {
+    color: var(--eerie-black);
+}
+
 .btt-link,
 .update-link,
 .remove-item {
