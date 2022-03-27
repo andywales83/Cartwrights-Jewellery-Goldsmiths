@@ -213,11 +213,12 @@ li a {
 }
 
 .shop-now-button {
-    background: var(--vivid-sky-blue);
-    color: white;
     min-width: 260px;
     z-index: 100;
     position: relative;
+    background: var(--vivid-sky-blue);
+    color: var(--eerie-black);
+    border: 1px solid black;
 }
 
 .shop-now-button:hover {
