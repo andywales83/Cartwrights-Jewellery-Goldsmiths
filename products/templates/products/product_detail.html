@@ -48,42 +48,42 @@
                     <div class="form-row">
                         {% with product.has_sizes as s %}
                         {% if s %}
-                        {% if product.category.name == 'chains' %}
-                        <div class="col-12">
-                            <p><strong>Size:</strong></p>
-                            <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
-                                <option value="chain sizes" selected disabled>Chain Sizes</option>
-                                <option value="16in">16in</option>
-                                <option value="18in">18in</option>
-                                <option value="20in">20in</option>
-                                <option value="22in">22in</option>
-                                <option value="24in">24in</option>
-                                <option value="26in">26in</option>
-                                <option value="28in">28in</option>
-                                <option value="30in">30in</option>
-                            </select>
-                        </div>
-                        {% else %}
-                        <div class="col-12">
-                            <p><strong>Size:</strong></p>
-                            <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
-                                <option value="ring sizes" selected disabled>Ring Sizes</option>
-                                <option value="I">I</option>
-                                <option value="J">J</option>
-                                <option value="K">K</option>
-                                <option value="L">L</option>
-                                <option value="M">M</option>
-                                <option value="N">N</option>
-                                <option value="O">O</option>
-                                <option value="P">P</option>
-                                <option value="Q">Q</option>
-                                <option value="R">R</option>
-                                <option value="S">S</option>
-                                <option value="T">T</option>
-                                <option value="U">U</option>
-                            </select>
-                        </div>
-                        {% endif %}
+                            {% if product.category.name == 'chains' %}
+                            <div class="col-12">
+                                <p><strong>Size:</strong></p>
+                                <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                    <option value="chain sizes" selected disabled>Chain Sizes</option>
+                                    <option value="16in">16in</option>
+                                    <option value="18in">18in</option>
+                                    <option value="20in">20in</option>
+                                    <option value="22in">22in</option>
+                                    <option value="24in">24in</option>
+                                    <option value="26in">26in</option>
+                                    <option value="28in">28in</option>
+                                    <option value="30in">30in</option>
+                                </select>
+                            </div>
+                            {% else %}
+                            <div class="col-12">
+                                <p><strong>Size:</strong></p>
+                                <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                    <option value="ring sizes" selected disabled>Ring Sizes</option>
+                                    <option value="I">I</option>
+                                    <option value="J">J</option>
+                                    <option value="K">K</option>
+                                    <option value="L">L</option>
+                                    <option value="M">M</option>
+                                    <option value="N">N</option>
+                                    <option value="O">O</option>
+                                    <option value="P">P</option>
+                                    <option value="Q">Q</option>
+                                    <option value="R">R</option>
+                                    <option value="S">S</option>
+                                    <option value="T">T</option>
+                                    <option value="U">U</option>
+                                </select>
+                            </div>
+                            {% endif %}
                         {% endif %}
                         <div class="col-12">
                             <p class="mt-3"><strong>Quantity:</strong></p>
