@@ -19,7 +19,7 @@ from .models import Order, OrderLineItem
 
 @require_POST
 def cache_checkout_data(request):
-    """ Checkout data caching """
+    """ Caches basket and checkout form information """
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -29,14 +29,14 @@ def cache_checkout_data(request):
             'username': request.user,
         })
         return HttpResponse(status=200)
-    except Exception as err:
+    except Exception as e:
         messages.error(request, 'Sorry, your payment cannot be \
             processed right now. Please try again later.')
-        return HttpResponse(content=err, status=400)
+        return HttpResponse(content=e, status=400)
 
 
 def checkout(request):
-    """ A view to show checkout data """
+    """ Renders/processes checkout form """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -56,7 +56,11 @@ def checkout(request):
         }
         order_form = OrderForm(form_data)
         if order_form.is_valid():
-            order = order_form.save()
+            order = order_form.save(commit=False)
+            pid = request.POST.get('client_secret').split('_secret')[0]
+            order.stripe_pid = pid
+            order.original_basket = json.dumps(basket)
+            order.save()
             for item_id, item_data in basket.items():
                 try:
                     product = Product.objects.get(id=item_id)
@@ -79,23 +83,22 @@ def checkout(request):
                             order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your basket wasn't \
-                            found in our database. "
-                        "Please call us for assistance!")
+                        "One of the products in your basket wasn't found "
+                        "in our database. Please call us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_basket'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success',
-                            args=[order.order_number]))
+            return redirect(
+                reverse('checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
     else:
         basket = request.session.get('basket', {})
         if not basket:
-            messages.error(request, "Your basket is empty!")
+            messages.error(request, "Your basket is currently empty!")
             return redirect(reverse('products'))
 
         current_basket = basket_contents(request)
