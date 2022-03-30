@@ -11,7 +11,7 @@ from products.models import Product
 from .models import Order, OrderLineItem
 
 
-class StripeWH_Handler:
+class StripeWebhookHandler:
     """Handle Stripe webhooks"""
 
     def __init__(self, request):
@@ -106,12 +106,12 @@ class StripeWH_Handler:
                                 product_size=size,
                             )
                             order_line_item.save()
-            except Exception as e:
+            except Exception as err:
                 if order:
                     order.delete()
                 return HttpResponse(
-                    content=f'Webhook received: {event["type"]} | ERROR: {e}',
-                    status=500)
+                    content=f'Webhook received: {event["type"]} | ERROR: \
+                        {err}', status=500)
         return HttpResponse(
             content=f'Webhook received: {event["type"]} | SUCCESS: \
                       Created order in webhook',

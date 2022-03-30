@@ -115,7 +115,7 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'cartwrights_jewellery_goldsmiths.wsgi.application'
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-andywales83-cartwrightsj-8pwiyeelt6b.ws-eu38.gitpod.io/', ]
+CSRF_TRUSTED_ORIGINS = ['https://8000-andywales83-cartwrightsj-8pwiyeelt6b.ws-eu38.gitpod.io/checkout/wh/', ]
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
