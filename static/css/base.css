@@ -164,12 +164,6 @@ body {
     background-color: var(--vivid-sky-blue);
 }
 
-
-/* --- Search Box Styling --- */
-.form-control {
-    border-radius: 25px;
-}
-
 .control-btn {
     background: var(--vivid-sky-blue);
 }
@@ -191,9 +185,9 @@ li a {
     font-weight: bold;
 }
 
-.dropdown-item:hover {
+/* .dropdown-item:hover {
     background-color: #0acdff;
-}
+} */
 
 
 /* --- Delivery Banner --- */
@@ -290,6 +284,25 @@ button .subscribe-btn {
     background-color: #dedee0;
 }
 
+
+/* -------------------------------- Allauth form formatting */
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem;
+    color: var(--eerie-black);
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+}
+
+.allauth-form-inner-content label:not([for="id_remember"]) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: var(--davys-grey);
+}
 
 /* -------------------------------- Media Queries */
 
