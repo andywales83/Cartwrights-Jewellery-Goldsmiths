@@ -1,0 +1,29 @@
+:root {
+    /* CSS HEX */
+    --blue-munsell: #068caf;
+    --cerulean-crayola: #08a9d3;
+    --cerulean-crayola-gradient: #0884a3;
+    --vivid-sky-blue: #0acdff;
+    --opal: #bfd2cf;
+    --gainsboro: #dedee0;
+    --silver: #c5c3c6;
+    --davys-grey: #535354;
+    --eerie-black: #232426;
+}
+
+#profile-update-form .form-control {
+    color: var(--eerie-black);
+}
+
+#profile-update-form input::placeholder {
+    color: var(--silver);
+}
+
+#id_default_country,
+#id_default_country option:not(:first-child) {
+    color: #000;
+}
+
+#id_default_country option:first-child {
+    color: #aab7c4;
+}

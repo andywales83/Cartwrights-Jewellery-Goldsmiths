@@ -1,52 +1,35 @@
-<footer class="py-3">
-    <div class="contaiiner">
-        <div class="row">
-            <div class="col-md-12 col-lg-4 text-center">
-                <h5>Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-            </div>
-    
-            <div class="col-md-12 col-lg-4 text-center">
-                <h5>Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-            </div>
-    
-            <div class="col-md-12 col-lg-4 text-center">
-                <h5>Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-            </div>
-    
-        <div class="col d-flex justify-content-between py-1 my-2 border-top">
-            <p>© 2021 Company, Inc. All rights reserved.</p>
-            <ul class="list-unstyled d-flex">
-                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#twitter"></use>
-                        </svg></a>Twitter</li>
-                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#instagram"></use>
-                        </svg></a>Instagram</li>
-                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#facebook"></use>
-                        </svg></a>Facebook</li>
-            </ul>
+<footer class="container-fluid footer-container text-black">
+    <div class="row">
+        <!----- Site Links ----->
+        <div class="footer-content col-12 col-md-4 text-center mt-4">
+            <h5>Explore</h5>
+            <hr>
+            <p><a href="{% url 'home' %}" class="footer-menu-link text-black">Home</a></p>
+            <p><a href="{% url 'products' %}" class="footer-menu-link text-black">All Products</a></p>
+            <p><a href="#" class="footer-menu-link text-black">Design Service</a></p>
+            <p><a href="#">Contact</a></p>
+        </div>
+        <!----- Contact Info ----->
+        <div class="footer-content col-12 col-md text-center mt-4">
+            <h5>Contact</h5>
+            <hr>
+            <p><i class="fas fa-phone"></i> +44123 567891</p>
+            <p><i class="fas fa-envelope-open"></i> info@cartwrightsjewellery.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Jiira Jewellery, 555 Chang Pheuak Rd, Chiang Mai, Thailand.</p>
+        </div>
+        <!----- Social Links ----->
+        <div class="footer-content col-12 col-md-4 text-center mt-4">
+            <h5>Follow</h5>
+            <hr>
+            <p><a href="https://www.facebook.com" target="_blank" rel="noopener" class="text-black"><i class="fab fa-facebook-square text-black"></i> Facebook</a></p>
+            <p><a href="https://www.twitter.com/" target="_blank" rel="noopener" class="text-black"><i class="fab fa-twitter-square"></i> Twitter</a></p>
+            <p><a href="https://www.instagram.com" target="_blank" rel="noopener" class="text-black"><i class="fab fa-instagram-square"></i> Instagram</a></p>
+            <p><a href="https://www.pinterest.com" target="_blank" rel="noopener" class="text-black"><i class="fab fa-pinterest"></i> Pinterest</a></p>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container text-black" id="copyright">
+            © 2021 Cartwright's Jewellery
         </div>
     </div>
 </footer>
