@@ -11,6 +11,11 @@
     --eerie-black: #232426;
 }
 
+.order-history {
+    max-height: 416px; /* height of profile form and submit button */
+    overflow-y: auto;
+}
+
 #profile-update-form .form-control {
     color: var(--eerie-black);
 }
