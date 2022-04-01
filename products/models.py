@@ -1,11 +1,17 @@
-"""Imports for products app models"""
+"""
+Imports for products app models
+"""
 from django.db import models
 
 
 class Category(models.Model):
-    """Creates Genre table in database"""
+    """
+    Creates Genre table in database
+    """
     class Meta:
-        """ To ensure the plural of Catergory is correcrly specified. """
+        """
+        To ensure the plural of Catergory is correcrly specified.
+        """
         verbose_name_plural = 'Categories'
 
     name = models.CharField(max_length=254)
@@ -15,12 +21,16 @@ class Category(models.Model):
         return self.name
 
     def get_friendly_name(self):
-        """ Returns a user friendly name for display purposes """
+        """
+        Returns a user friendly name for display purposes
+        """
         return self.friendly_name
 
 
 class Product(models.Model):
-    """ creates product table in database """
+    """
+    Creates product table in database
+    """
     category = models.ForeignKey(
         'Category', null=True, blank=True,
         on_delete=models.SET_NULL)

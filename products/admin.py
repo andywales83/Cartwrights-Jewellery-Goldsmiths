@@ -1,4 +1,6 @@
-"""Product App Admin Classes"""
+"""
+Product App Admin Classes
+"""
 from django.contrib import admin
 from .models import Product, Category
 
@@ -6,6 +8,9 @@ from .models import Product, Category
 
 
 class ProductAdmin(admin.ModelAdmin):
+    """
+    Product admin
+    """
     list_display = (
         'sku',
         'name',
@@ -19,6 +24,9 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class CategoryAdmin(admin.ModelAdmin):
+    """
+    Category Admin
+    """
     list_display = (
         'friendly_name',
         'name'

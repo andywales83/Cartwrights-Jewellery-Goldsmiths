@@ -1,4 +1,6 @@
-""" url path for the home App """
+"""
+url path for the home App
+"""
 from django.urls import path
 from . import views
 from .webhooks import webhook
