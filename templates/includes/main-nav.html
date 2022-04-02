@@ -5,7 +5,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <div class="dropdown-menu border" aria-labelledby="all-products-link">
                 <a class="dropdown-item" href="{% url 'products' %}?category=rings">Rings</a>
                 <a class="dropdown-item" href="{% url 'products' %}?category=chains">Chains</a>
                 <a class="dropdown-item" href="{% url 'products' %}?category=earings">Earings</a>
@@ -19,7 +19,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="collections-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Collections
             </a>
-            <div class="dropdown-menu" aria-labelledby="collections-link">
+            <div class="dropdown-menu border" aria-labelledby="collections-link">
                 <a class="dropdown-item" href="{% url 'products' %}?category=bee_collection">Bee Collection</a>
                 <a class="dropdown-item" href="{% url 'products' %}?category=sheep_collection">Sheep Collection</a>
                 <a class="dropdown-item" href="{% url 'products' %}?category=elegance_collection">Elegence                       Collection</a>
@@ -30,7 +30,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="offers-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Offers
             </a>
-            <div class="dropdown-menu" aria-labelledby="offers-link">
+            <div class="dropdown-menu border" aria-labelledby="offers-link">
                 <a class="dropdown-item" href="{% url 'products' %}?category=new_arrivals">New Arrivals</a>
                 <a class="dropdown-item" href="{% url 'products' %}?category=deals">Deals</a>
                 <a class="dropdown-item" href="{% url 'products' %}?category=new_arrivals,deals">All Specials</a>
@@ -39,7 +39,7 @@
 
         <li class="nav-item">
             <a class="nav-link" href="#">
-                Design Service
+                User Reviews
             </a>
         </li>
 
