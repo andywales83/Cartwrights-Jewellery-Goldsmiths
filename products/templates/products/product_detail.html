@@ -54,11 +54,11 @@
                     <div class="form-row">
                         {% with product.has_sizes as s %}
                             {% if s %}
-                                {% if product.category.name == 'chains' or product.category.name == 'bee_collection' %}
+                                {% if product.category.name == 'chains' or product.category.name == 'bee_collection' or product.category.name == 'sheep_collection' %}
                                     <div class="col-12">
                                         <p><strong>Size:</strong></p>
-                                        <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
-                                            <option value="chain sizes" selected disabled>Chain Sizes</option>
+                                        <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size' required>
+                                            <option value="">Chain sizes</option>
                                             <option value="16in">16in</option>
                                             <option value="18in">18in</option>
                                             <option value="20in">20in</option>
@@ -72,8 +72,8 @@
                                 {% else %}
                                     <div class="col-12">
                                         <p><strong>Size:</strong></p>
-                                        <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
-                                            <option value="ring sizes" selected disabled>Ring Sizes</option>
+                                        <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size' required>
+                                            <option value="">Ring Sizes</option>
                                             <option value="I">I</option>
                                             <option value="J">J</option>
                                             <option value="K">K</option>
