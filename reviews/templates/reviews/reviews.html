@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/reviews.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center">
+            <h2 class="logo-font mt-4">User Reviews</h2>
+            <hr class="w-50 mt-3 mb-3">
+        </div>
+    </div>
+
+    <!-- User reviews -->
+    {% if posts %}
+        <div class="row mb-5">
+            {% for post in posts %}
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <div class="card rounded">
+                        <div class="card-header">
+                            <div class="card-header-title">
+                                <a href="#" class="title-heading-small blog-title">
+                                    {{ post.title | truncatechars:15 | capfirst }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h5 class="text-center">There are currently no reviews to see!</h5>
+                <p class="text-center"></p>
+            </div>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}
