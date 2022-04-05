@@ -31,9 +31,38 @@
                     <div class="card rounded">
                         <div class="card-header">
                             <div class="card-header-title">
-                                <a href="#" class="title-heading-small blog-title">
-                                    {{ post.title | truncatechars:15 | capfirst }}
+                                <a href="{% url 'review_details' post.slug %}" class="title-heading-small blog-title">
+                                    {{ post.title | capfirst }}
                                 </a>
+                            </div>
+                        </div>
+                        {% if post.image %}
+                            <a href="#">
+                                <img  class="blog-post-img" src="{{ MEDIA_URL }}{{ post.image }}" alt="{{ post.title }}">
+                            </a>
+                        {% else %}
+                            <a href="#">
+                                <img  class="blog-post-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.title }}"/>
+                            </a>
+                        {% endif %}
+                        <hr class="w-100">
+                        <div class="card-body">
+                            <div class="blog-content content">
+                                <p class="blog-p">Added By: <span class="blog-small">{{ post.author }},
+                                        {{ post.created_on|timesince }}
+                                        ago </span>
+                                </p>
+                                {% if post.comments.all|length == 0 %}
+                                <p class="blog-p">Add
+                                    <a href="#">
+                                        comment <i class="far fa-comments"></i> </a>
+                                </p>
+                                {% else %}
+                                <p class="blog-p">See all
+                                    <a href="#">
+                                        {{ post.comments.all|length }} comments <i class="far fa-comments"></i></a>
+                                </p>
+                                {% endif %}
                             </div>
                         </div>
                     </div>

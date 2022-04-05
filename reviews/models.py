@@ -19,5 +19,21 @@ class Post(models.Model):
 
     class Meta:
         """
-        To show most recent news posts first """
+        To show most recent news posts first
+        """
+        ordering = ['-created_on']
+
+
+class Comment(models.Model):
+    """
+    The model for a comment on a user review
+    """
+    post = models.ForeignKey(
+        Post, related_name='comments', on_delete=models.CASCADE)
+    name = models.CharField(max_length=80)
+    comment_body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        """ to show most recent comments first """
         ordering = ['-created_on']
