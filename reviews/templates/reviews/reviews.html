@@ -69,6 +69,12 @@
                                 </p>
                                 {% endif %}
                             </div>
+                            {% if request.user.is_superuser %}
+                                <small class="ml-1">
+                                <a class="mr-2" href="{% url 'edit_review' post.slug %}">Edit</a> | 
+                                <a class="text-danger ml-2" href="{% url 'delete_review' post.slug %}">Delete</a>
+                                </small>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -82,11 +88,13 @@
             </div>
         </div>
     {% endif %}
-    <div class="row">
-        <div class="col text-center">
-            <a class="btn btn-outline-black my-4" href="{% url 'add_review' %}">Add Review<i
-                    class="fas fa-plus-circle m-2"></i></a>
+    {% if request.user.is_superuser %}
+        <div class="row">
+            <div class="col text-center">
+                <a class="btn btn-outline-black my-4" href="{% url 'add_review' %}">Add A Review<i
+                        class="fas fa-plus-circle m-2"></i></a>
+            </div>
         </div>
-    </div>
+    {% endif %}
 </div>
 {% endblock %}

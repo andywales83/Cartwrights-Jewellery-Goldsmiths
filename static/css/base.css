@@ -17,7 +17,6 @@ html {
     position: relative;
     min-height: 100%;
     scroll-behavior: smooth;
-    min-height: 100%;
 }
 
 body {
@@ -279,8 +278,6 @@ footer {
     background-color: var(--vivid-sky-blue) !important;
     position: absolute;
     width: 100%;
-    left: 0;
-    bottom: 0;
 }
 
 button .subscribe-btn {

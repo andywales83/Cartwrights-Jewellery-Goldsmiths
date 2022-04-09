@@ -58,6 +58,14 @@
                                         {{ comment.name }}
                                         <br>
                                         <span class="small">{{ comment.created_on }}</span>
+                                        <div class="admin-options">
+                                            {% if request.user.is_superuser %}
+                                                <small>
+                                                <a class="mr-2" href="{% url 'edit_review' post.slug %}">Edit</a> | 
+                                                <a class="text-danger ml-2" href="{% url 'delete_review' post.slug %}">Delete</a>
+                                                </small>
+                                            {% endif %}
+                                        </div>
                                     </div>
                                     <div class="card-body">
                                         {{ comment.comment_body }}
