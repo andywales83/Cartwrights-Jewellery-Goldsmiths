@@ -13,8 +13,7 @@ Cartwright's Jewellery & Goldsmiths, is the final Milestone project, specificall
 - [UI Design](#ux-design)
 - [Wireframes](#wireframes)
 - [Data Structure](#data-structure) 
-- [Existing Features](#existing-features)
-- [Future Features](#future-features)
+- [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
 - [Deployment](#deployment)
@@ -123,3 +122,125 @@ As a site administrator, I would want all of the same functionality of that of a
 credits to richard ash CI student for the Javascript code to make toast work on Bootstrap5
 
 ---
+
+## **Wireframes**
+
+---
+
+## **Data Structure**
+
+---
+## **Features**
+
+**Implemented**
+
+*Generic*
+* Responsive design on the vast majority of devices
+* Delivery banner which displays the purchase requirement for free delivery and also product information.
+* Navigation bar, including logo and link to the home page, a search box, an account icon and shopping basket icon which also displays the number of items currently in the basket.
+* Links in the navigation bar collapse to a hamburger button on smaller devices such as smartphones and tablets.
+* Toast messages giving users meaningful feedback to their actions on the website.
+* Footer with navigation links to all pages, contact details, social media links and copyright information.
+* 'Back to top' button where applicable.
+
+*Homepage*
+* Hero image with call to action button to encourage people to make a purchase.
+* An About-Us section detailing the business, its locations and it's history.
+* A bespoke design section highlighting the option for customer to purchase bespoke design creations services from the buisness, with images to show previously designed jewellery.
+
+*Product Pages*
+* Clear pictures of the products.
+* Ability to sort products by name and price.
+* Gives store admin access to edit/delete options.
+
+*Product Details Page*
+* The product detail page gives a larger image.
+* Also gives users the ability to select a quantity to add to the basket.
+* Gives store admin access to edit/delete options.
+
+
+*Add & Edit Product Pages*
+* These pages give the store admin the ability to add new products and edit existing ones.
+
+*Basket Page*
+* Shows all the products in the basket.
+* The ability to amend items in the basket.
+* Also shows the total amount due, delivery costs and any applicable discount.
+
+*Checkout Page*
+* Users can enter delivery and payment information for their purchase.
+* This information is pre-filled if the user already has logged in to their saved profile.
+* Webhooks were employed to ensure smooth and secure transactions.
+
+*User Review Page*
+* A user review page where visitors to the site can view reviews of the jewellery purchased by customers.
+* Ability to add Images to the review with the main review title being a link to the full review.
+* Details of the author and date published.
+
+*News (Blog) Detail*
+* Comment section allowing users to comment on posts that have been published.
+* Each review shows all comments left by visitors to the site.
+* A form where people can leave comments on a review (this includes a call to action to be the first to comment).
+* The ability to edit or delete a news post (admin logins only).
+
+*User Profile Page*
+* User can edit their contact and delivery information held on the system.
+* User can also see their order history.
+
+**Future Features to Implement**
+* The ability to login using a social media account.
+* A wish list feature.
+* Inventory tracking so stock availability can be shown on website.
+* 'Track my order' functionality so that customers can see the status of their order.
+* Skip navigation links for visitors to the site with certain disabilities to enhance their UX.
+* The ability to accept or edit cookies.
+* Marketing opt-in options on the registration page.
+
+---
+
+## **Technologies Used**
+
+*IDE*
+* Gitpod
+
+*Languages*
+* Python
+* HTML
+* CSS
+* JavaScript
+
+*Frameworks, Templates & Libraries*
+* Django
+* JQuery
+* Jinja
+* Bootstrap
+* Font Awesome
+* Google Fonts
+
+*Storage & Hosting*
+* Heroku
+* Github
+* Amazon Web Services
+
+*Databases*
+* SQLite3 for development
+* PostgresSQL for the deployed site
+
+*Payment Service*
+* Stripe
+
+*Other Tools*
+* Google Dev Tools (including Lighthouse)
+* Pep8online.com (to check Python code for PEP 8 requirements)
+* W3C Validator (to check validity of HTML and CSS)
+* JSHint.com (to check JavaScript)
+* dbdiagram.io (to produce the MongoDB ERD)
+
+---
+## **Deployment**
+
+As with testing, due to the amount of information regarding deployment, it has been detailed in the following separate [file](readme/deployment/Deployment.md).
+
+---
+
+## **Credits**

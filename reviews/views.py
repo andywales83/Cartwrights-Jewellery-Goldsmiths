@@ -5,6 +5,7 @@ from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
+from profiles.models import UserProfile
 from .models import Post
 
 from .forms import CommentForm, PostForm
@@ -54,28 +55,23 @@ def review_details(request, slug):
 
 @login_required
 def add_review(request):
-    """ a view to add a post to the blog """
-
-    if request.method == "POST":
-        form = PostForm(request.POST)
+    """
+    Add a new user revie
+    """
+    if request.method == 'POST':
+        form = PostForm(request.POST, request.FILES)
         if form.is_valid():
-            obj = form.save(commit=False)
-            author = request.user
-            obj.author = author
-            obj.save()
-
-            messages.success(request, "Successfully added your user review")
-            return redirect(reverse('review_details', args=[obj.slug]))
+            post = form.save()
+            messages.success(request, 'Successfully added your review!')
+            return redirect(reverse('review_detail', args=[post.slug]))
         else:
-            messages.error(
-                request, "Failed to add your user review, please check the form is \
-                    valid")
+            messages.error(request, 'Failed to add your review. Please \
+                ensure the form is valid.')
     else:
         form = PostForm()
 
     template = 'reviews/add_review.html'
     context = {
-        'post': post,
         'form': form,
     }
 
