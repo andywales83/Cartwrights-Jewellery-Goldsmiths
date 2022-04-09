@@ -56,7 +56,7 @@ def review_details(request, slug):
 @login_required
 def add_review(request):
     """
-    Add a new user revie
+    Add a new user review
     """
     if request.method == 'POST':
         form = PostForm(request.POST, request.FILES)

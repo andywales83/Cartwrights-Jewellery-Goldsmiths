@@ -22,6 +22,7 @@ html {
 body {
     background: url(/static/images/home-img.png) no-repeat center center fixed;
     background-size: cover;
+    background-repeat: no-repeat;
     height: calc(100vh - 164px);
     color: var(--eerie-black);
     font-family: 'Source Sans Pro', sans-serif;
