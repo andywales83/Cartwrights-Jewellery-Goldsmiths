@@ -17,6 +17,7 @@ html {
     position: relative;
     min-height: 100%;
     scroll-behavior: smooth;
+    min-height: 100%;
 }
 
 body {
@@ -278,6 +279,8 @@ footer {
     background-color: var(--vivid-sky-blue) !important;
     position: absolute;
     width: 100%;
+    left: 0;
+    bottom: 0;
 }
 
 button .subscribe-btn {
@@ -363,5 +366,45 @@ button .subscribe-btn {
 
     body {
         height: calc(100vh - 116px);
+    }
+
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
+    .btn.btn-lg.shop-now-button {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded,
+    .btn.btn-black.rounded {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded.btn-lg,
+    .btn.btn-black.rounded.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
     }
 }
