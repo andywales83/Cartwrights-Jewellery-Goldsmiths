@@ -357,6 +357,10 @@ button .subscribe-btn {
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
+    .navbar {
+        padding: 0.1rem 0.1rem;
+    }
+    
     .header-container {
         padding-top: 116px;
     }
@@ -374,12 +378,16 @@ button .subscribe-btn {
     }
 
     .nav-link i.fa-lg {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .navbar-toggler {
         padding: .6rem .6rem;
         font-size: 1rem;
+    }
+
+    div p .mobile-nav-text {
+        font-size: 0.9rem;
     }
 
     #delivery-banner h4 {

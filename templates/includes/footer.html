@@ -5,7 +5,7 @@
             <h5>Explore</h5>
             <hr>
             <p><a href="{% url 'home' %}" class="footer-menu-link text-black">Home</a></p>
-            <p><a href="{% url 'products' %}" class="footer-menu-link text-black">All Products</a></p>
+            <p><a href="{% url 'products' %}?category=rings,chains,earings,bracelets,watches" class="footer-menu-link text-black">All Products</a></p>
             <p><a href="{% url 'reviews' %}" class="footer-menu-link text-black">User Reviews</a></p>
         </div>
         <!----- Contact Info ----->
@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="footer-copyright">
-        <div class="container text-black" id="copyright">
+        <div class="container text-black text-center" id="copyright">
             © 2021 Cartwright's Jewellery
         </div>
     </div>
