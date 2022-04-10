@@ -67,7 +67,7 @@ def add_review(request):
         if form.is_valid():
             post = form.save()
             messages.success(request, 'Successfully added your review!')
-            return redirect(reverse('review_detail', args=[post.slug]))
+            return redirect(reverse('review_details', args=[post.slug]))
         else:
             messages.error(request, 'Failed to add your review. Please \
                 ensure the form is valid.')
