@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', 'postgres://fhyxpfbjrdqfzc:8063a34775b2f5e821ed4ce5ad4951cdc7969fb1eb4a76a4fb35404961aaa1c8@ec2-63-32-248-14.eu-west-1.compute.amazonaws.com:5432/df03k6623gk9se')
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
@@ -123,13 +123,17 @@ CSRF_TRUSTED_ORIGINS = ['https://8000-andywales83-cartwrightsj-8pwiyeelt6b.ws-eu
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else: 
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 # Password validation
