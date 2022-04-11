@@ -2,7 +2,7 @@
 
 Cartwright's Jewellery & Goldsmiths, is the final Milestone project, specifically built for the Django modules of the Code Institute's - Full Stack Software Development Diploma. The scope and idea for this project, were to plan, design and build an e-commerce website, that gives users all of the same functionality of any other general e-commerce based website. The project is built around an idea for an online Jewellery store, with a view to possibly being used as a full production site for a family member, when the course has been completed.
 
-[View the live project on Heroku]()
+[View the live project on Heroku](https://cartwrights-jewellery.herokuapp.com/)
 
 ![Am I responsive image]()
 
@@ -209,6 +209,18 @@ Low fidelity wireframes were created with Balsamiq, and bring to life the basic 
 * Skip navigation links for visitors to the site with certain disabilities to enhance their UX.
 * The ability to accept or edit cookies.
 * Marketing opt-in options on the registration page.
+
+---
+
+## **Testing**
+
+### Lighthouse (Google Dev Tools)
+
+- The Lighthouse Report for the site's main home page on Mobile was as follows:
+   - [Desktop Lighthouse Report](/documentation/images/test-images/lighthouse-desktop-home.png)
+
+- The Lighthouse Report for the site's main home page on Desktop was as follows:
+   - [Mobile Lighthouse Report](/documentation/images/test-images/lighthouse-mobile-home.png)
 
 ---
 
