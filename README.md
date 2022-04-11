@@ -108,18 +108,24 @@ As a site administrator, I would want all of the same functionality of that of a
 ## **UI Design**
 
 ### Fonts
-
+- The project uses Google Fonts for the delivery of the main font styling.
+- The main font used for body text, is the Source Sans Pro font.
+- The font used for the main logo and nav links in the header is Playfair Display.
 
 ### Colour Scheme
+- The colour scheme was chosen to make the site look as visually appealing, using a minimal amount of colours.
 
+The overall colour palette was designed from a website called [Coolors](https://coolors.co/) and was selected, becasue of the broad spectrum of colour options available. However, not all colours in the palette are used. 
+![Colour Palette](/documentation/images/general-images/MS4-palette.png)
 
-#### **Colour Palette**
-
-
+- The Davy's Grey color was used for the general font color of the site, so that it stands out against the background colour.
+- The Vivid Sky Blue colour is used for the bacground colour of the navigation bar and for the footer   
+- The Gainsborough colour has been used as the general background colour for all pages.
+- The Vivid Sky Blue colour has been used for the buttons, with the Cerulean Blue colour being used to accent the button colours with the hover feature.
 
 ### Icons
 
-credits to richard ash CI student for the Javascript code to make toast work on Bootstrap5
+Where required, icons used have been incorporated using Font Awesome
 
 ---
 
@@ -176,6 +182,7 @@ credits to richard ash CI student for the Javascript code to make toast work on 
 * A user review page where visitors to the site can view reviews of the jewellery purchased by customers.
 * Ability to add Images to the review with the main review title being a link to the full review.
 * Details of the author and date published.
+* Ability for people to comment on the review posts.
 
 *News (Blog) Detail*
 * Comment section allowing users to comment on posts that have been published.
