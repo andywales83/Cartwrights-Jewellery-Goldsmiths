@@ -209,7 +209,7 @@ li a {
 }
 
 .shop-now-button {
-    min-width: 260px;
+    min-width: 180px;
     z-index: 100;
     position: relative;
     background: var(--vivid-sky-blue);
@@ -379,6 +379,10 @@ button .subscribe-btn {
 
     .nav-link i.fa-lg {
         font-size: 0.9rem;
+    }
+
+    .nav-text {
+        font-size: 0.9rem !important;
     }
 
     .navbar-toggler {

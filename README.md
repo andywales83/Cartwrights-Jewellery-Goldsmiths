@@ -131,9 +131,16 @@ Where required, icons used have been incorporated using Font Awesome
 
 ## **Wireframes**
 
----
+### **Low Fidelity Wireframes**
 
-## **Data Structure**
+Low fidelity wireframes were created with Balsamiq, and bring to life the basic prototyping structure of how the site may initially be designed to look.
+
+- [Home Page](/documentation/wireframes/home-page.png)
+- [Products Page](/documentation/wireframes/products-page.png)
+- [Product Details](/documentation/wireframes/product-details.png)
+- [Shopping Basket](/documentation/wireframes/shopping-basket.png)
+- [Checkout Page](/documentation/wireframes/checkout-page.png)
+- [User Reviews](/documentation/wireframes/user-reviews.png)
 
 ---
 ## **Features**
