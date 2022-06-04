@@ -36,7 +36,7 @@ Testing user stories from the UX section with the corresponding features and con
 </details>
 <br>
 
-### User story images
+### User story images:
 
 <details>
 <summary>Home</summary>
@@ -112,6 +112,13 @@ Testing user stories from the UX section with the corresponding features and con
 
 ---
 <br>
+
+## **Testing and Validation**
+### [Link Checker](https://validator.w3.org/checklink)
+- To check that all links are working and not broken. 
+- The report did not have any issues in final testing.
+
+---
 
 ### Lighthouse (Google Dev Tools)
 
