@@ -103,15 +103,17 @@
                     </table>
                 </div>
             {% else %}
-                <p class="lead mb-5">Your basket is currently empty</p>
-                <a href="{% url 'products' %}" class="btn btn-lg btn-outline-dark rounded-1 shopping-btn">
-                    <span class="icon">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
-                    <span class="text-uppercase">Keep Shopping</span>
-                </a>
+                <div class="text-center">
+                    <p class="lead mt-5 mb-5">Your basket is currently empty.</p>
+                    <a href="{% url 'products' %}" class="btn btn-lg btn-outline-dark rounded-1 shopping-btn mb-5">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Keep Shopping</span>
+                    </a>
+                </div> 
             {% endif %}
-            </div>
+        </div>
     </div>
 </div>
 {% endblock %}
