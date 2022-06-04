@@ -63,45 +63,51 @@ Testing user stories from the UX section with the corresponding features and con
 </details>
 
 <details>
-<summary>Cart: Empty</summary>
+<summary>Baseket: Empty</summary>
 
-![Cart: Empty]()
+![Basket: Empty](/documentation/images/test-images/basket_empty.png)
 </details>
 
 <details>
-<summary>Cart: With Products</summary>
+<summary>Basket: With Products</summary>
 
-![Cart: With Products]()
+![Baskett: With Products](/documentation/images/test-images/basket_with_products.png)
 </details>
 
 <details>
 <summary>Checkout</summary>
 
-![Checkout]()
+![Checkout](/documentation/images/test-images/checkout.png)
 </details>
 
 <details>
 <summary>Checkout Success</summary>
 
-![Checkout Success]()
+![Checkout Success](/documentation/images/test-images/checkout_success.png)
 </details>
 
 <details>
 <summary>Profile</summary>
 
-![Profile]()
+![Profile](/documentation/images/test-images/profile.png)
 </details>
 
 <details>
 <summary>Login</summary>
 
-![Login]()
+![Login](/documentation/images/test-images/login.png)
 </details>
 
 <details>
 <summary>Register</summary>
 
-![Login]()
+![Register](/documentation/images/test-images/register.png)
+</details>
+
+<details>
+<summary>User Reviews</summary>
+
+![User Reviews](/documentation/images/test-images/user_reviews.png)
 </details>
 
 ---
