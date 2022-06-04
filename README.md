@@ -66,20 +66,20 @@ The website is targeted at users who may be interested in purchasing ready made 
 2. As a first time visitor, I want the look of the site to be visually appealing.
 3. As a first time visitor, I want the layout of the site to be well structured.
 4. As a first time visitor, I want to be able to easily navigate the site and see the different product categories that are available.
-5. As a frist time visitor, I want to be able to easily find the main products page.
-7. As a first time visitor, I want to be able to navigate directly to pages for spcific product categories.
-8. As a first time visitor, I want to be able to sort of filter product categories, to more relevant product views.
-9. As a first time visitor, I want to be able to conduct a more specific search for a product, via an easilly accessible search function.
+5. As a first time visitor, I want to be able to easily find the main products page.
+7. As a first time visitor, I want to be able to navigate directly to pages for specific product categories.
+8. As a first time visitor, I want to be able to sort or filter product categories, to more relevant product views.
+9. As a first time visitor, I want to be able to conduct a more specific search for a product, via an easily accessible search function.
 10. As a first time visitor, I want to be able to closely view product details in their own page.
-11. As a first time visitor, I want to be able to have full control over the ammounts of a product that can be purchased.
+11. As a first time visitor, I want to be able to have full control over the amounts of a product that can be purchased.
 12. As a first time visitor, I want to be able to add the chosen products to a shopping basket where the basket total can be seen.
 13. As a first time visitor, I want to be able to access the shopping basket at any time and update or remove the chosen products, seeing an update to the overall shopping basket total.
-14. As a first time visitor, I want to be able to preview the order details befor continuing to make a purchase.
-14. As a first time visitor, I want to be able to follow a simple payment process which feels secure.
-14. As a first time visitor, I want to be able to see notifications appear, instructing of confirmed or failed purchases, with feedback on the reasons for failed purchases.
-14. As a first time visitor, I want to be able to register as a user either before purchasing products or after purchasing products. 
-14. As a first time visitor, I want to be able to find contact details for the site owners, and possibly submit an online enquiry regarding bespoke jewellery design. 
-14. As a first time visitor, I want to be able to connect with the store on social media platforms where I can see additional information.
+14. As a first time visitor, I want to be able to preview the order details before continuing to make a purchase.
+15. As a first time visitor, I want to be able to follow a simple payment process which feels secure.
+16. As a first time visitor, I want to be able to see notifications appear, instructing of confirmed or failed purchases, with feedback on the reasons for failed purchases.
+17. As a first time visitor, I want to be able to register as a user either before purchasing products or after purchasing products.
+18. As a first time visitor, I want to be able to find contact details for the site owners, and possibly submit an online enquiry regarding bespoke jewellery design. 
+19. As a first time visitor, I want to be able to connect with the store on social media platforms where I can see additional information.
 
 #### *Registered User*
 
@@ -91,7 +91,6 @@ As a regitered user, I would want all of the same functionality of that of a gue
 4. As a registered user, I want to be able to add and store my personal details for future use on the site.
 5. As a registered user, I want to be able to edit or delete my personal details, should circumstances require it.
 6. As a registered user, I want to be able to see a profile page where I can view my previous orders.
-8. As a registered user, I want to be able to delete my account in full, if I no longer wish to remain a member.
 
 #### *Site Administrator*
 
@@ -99,9 +98,8 @@ As a site administrator, I would want all of the same functionality of that of a
 
 1. As a site Administrator, I would want to be able to control the main functionality of the site, including adding new categories and products.
 2. As a site Administrator, I would want to be able to edit or delete categories and products as required.
-3. As a site Administrator, I would want to be able to control the products and their status in deals and promotions.
-4. As a site Administrator, I would want to be able to view all current and existing purchases made by users for accessing should a purchase query arise.
-5. As a site Administrator, I would want to be able to add new users or delete users who have issues with registration or account deletion functionality.
+3. As a site Administrator, I would want to be able to view all current and existing purchases made by users for accessing should a purchase query arise.
+4. As a site Administrator, I would want to be able to add new users or delete users who have issues with registration or account deletion functionality.
 
 ---
 
@@ -214,13 +212,7 @@ Low fidelity wireframes were created with Balsamiq, and bring to life the basic 
 
 ## **Testing**
 
-### Lighthouse (Google Dev Tools)
-
-- The Lighthouse Report for the site's main home page on Mobile was as follows:
-   - [Desktop Lighthouse Report](/documentation/images/test-images/lighthouse-desktop-home.png)
-
-- The Lighthouse Report for the site's main home page on Desktop was as follows:
-   - [Mobile Lighthouse Report](/documentation/images/test-images/lighthouse-mobile-home.png)
+Testing information can be found in the separate [TESTING.md file](readme/testing/TESTING.md)
 
 ---
 
