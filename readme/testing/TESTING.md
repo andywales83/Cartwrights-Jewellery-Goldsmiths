@@ -114,9 +114,25 @@ Testing user stories from the UX section with the corresponding features and con
 <br>
 
 ## **Testing and Validation**
+
 ### [Link Checker](https://validator.w3.org/checklink)
 - To check that all links are working and not broken. 
 - The report did not have any issues in final testing.
+
+### [HTML: W3C Markup Validation](https://validator.w3.org/)
+- To validate the HTML code of the project by pasting code in by direct input method. Note the W3C Validator for HTML does not understand the Jinja templating syntax therefore if there are warnings related to this, this can be safely ignored.
+- All issues were resolved except for 2 errors relating to Django crispy forms (see image below for more detail)
+<details>
+
+<summary>Checklist for checking all HTMl pages</summary>
+
+![Checklist for checking all HTMl pages](/documentation/images/test-images/html-validation-table.png)
+</details>
+<br>
+
+### [CSS: W3C CSS validation](https://jigsaw.w3.org/css-validator/)
+- To validate the CSS code of the project pasting code in by direct input method.
+- All issues were resolved
 
 ---
 
