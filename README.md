@@ -141,6 +141,23 @@ Low fidelity wireframes were created with Balsamiq, and bring to life the basic 
 - [User Reviews](/documentation/wireframes/user-reviews.png)
 
 ---
+
+## **Data Structure**
+A database structure was designed to be specifically suited for Cartwright's Jewellery. It was important to make sure the data structure was logical. Each product is linked to a category and these are identified by id (pk number).
+
+Each order has a unique order number which is generated when the order is processed and orders have the users and product details.
+
+Users have the option to purchase products as guest users or as registered users. Guest users can complete the order process but their details will not be saved, they won’t be able to see a Profile with their details, order history and shipping address etc. A Registered user will not only have access to their Profile but will also have their details pre-populated the next time they shop. 
+
+SQLite, which is Django's built-in database is used for development mode and Heroku Postgres is used for production mode. AWS (Amazon Web Services) is used to hold all static files and folders for the website for production mode.
+
+<details>
+<summary>Data Structure</summary>
+
+![Data Structure](/documentation/images/general-images/data-schema.png)
+</details>
+
+---
 ## **Features**
 
 **Implemented**

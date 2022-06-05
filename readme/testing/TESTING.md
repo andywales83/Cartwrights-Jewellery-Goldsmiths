@@ -134,6 +134,29 @@ Testing user stories from the UX section with the corresponding features and con
 - To validate the CSS code of the project pasting code in by direct input method.
 - All issues were resolved
 
+<details>
+<summary>CSS Validation</summary>
+
+![CSS Validation](/documentation/images/test-images/css_validation.png)
+</details>
+
+### [JavaScript: JSHint](https://jshint.com/)
+- JSHint was used to test javascript code in this project. 
+- All issues were resolved except the below:
+   - Final version - addressing errors and warnings: 
+      - Warning for ''let' is available in ES6 (use 'esversion: 6'). Can be safely ignored. If add /*jshint esversion: 6 */ at top of code so that JSHint does not raise unnecessary warnings for ECMAScript 6 features.
+      - JSHint flags Jquery $ symbol as an undefined variable - safely ignored.
+---
+
+## **Manual testing**
+<details>
+<summary>Manual testing for features</summary>
+
+![Manual testing for features](/documentation/images/test-images/manual-testing.png)
+</details>
+<br>
+All features of the site have been tested. Test purchases have been made to check the order confirmation emails and these are delivered correctly, with the correct information. 
+
 ---
 
 ### Lighthouse (Google Dev Tools)
@@ -143,7 +166,11 @@ Testing user stories from the UX section with the corresponding features and con
 
 - The Lighthouse Report for the site's main home page on Desktop was as follows:
    - [Mobile Lighthouse Report](/documentation/images/test-images/lighthouse-mobile-home.png)
-
+<br>
+- Lighthouse testing was conducted, to test the accessibility and performance of the website. 
+- After testing the site on Lighthouse, there were minor changes that needed to be made, for example, some buttons did not have aria labels, which was added. Another aspect that was fixed was link text styling, the colour needed to be changed to make it more accessible. Lastly, some heading tags were not in order, which was changed as well. 
+- After the above changes were made, the overall performance and accessibility have increased. 
+- Additional future changes can be made in optimising images in next-generation formats.
 
 ## **Deployment**
 - Ensured deployed page on Heroku loads up correctly.
