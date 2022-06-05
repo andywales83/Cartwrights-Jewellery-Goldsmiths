@@ -4,7 +4,7 @@ Cartwright's Jewellery & Goldsmiths, is the final Milestone project, specificall
 
 [View the live project on Heroku](https://cartwrights-jewellery.herokuapp.com/)
 
-![Am I responsive image]()
+![Am I responsive image](/documentation/images/test-images/am_i_responsive.png)
 
 ---
 ## **Contents**
